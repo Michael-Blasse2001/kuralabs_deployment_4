@@ -1,6 +1,7 @@
 resource "aws_security_group" "web_ssh" {
   name        = "ssh-access(Blasse)"
   description = "open ssh traffic"
+  vpc_id      = aws_vpc.KuraVpc.id
  
 
   ingress {
