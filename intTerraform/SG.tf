@@ -1,5 +1,5 @@
 resource "aws_security_group" "web_ssh" {
-  name        = "ssh-access"
+  name        = "ssh-access(Blasse)"
   description = "open ssh traffic"
  
 
@@ -27,7 +27,7 @@ resource "aws_security_group" "web_ssh" {
   }
 
   tags = {
-    "Name" : "Web server001"
+    "Name" : "Web server001(Blasse)"
     "Terraform" : "true"
   }
   
