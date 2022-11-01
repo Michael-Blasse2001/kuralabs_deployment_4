@@ -15,7 +15,7 @@ resource "aws_subnet" "pubsubnet1" {
 }
 
 resource "aws_subnet" "pubsubnet2" {
-  cidr_block              = "172.19.0.0/18"
+  cidr_block              = "172.19.0.0/19"
   vpc_id                  = aws_vpc.KuraVpc.id
   map_public_ip_on_launch = "true"
   availability_zone       = data.aws_availability_zones.available.names[0]
